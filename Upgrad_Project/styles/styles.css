@@ -1,0 +1,22 @@
+#bgImg{
+    height:100%;
+    width:100%;
+}
+body{
+    margin:0px;
+}
+#signUp{
+    position: absolute;
+    background-color:darkblue;
+    right:6vh;
+    top:2vh;   
+    color:white;
+}
+
+#signIn{
+    position: absolute;
+    background-color: darkblue;
+    right:14vh;
+    top:2vh;   
+    color:white;
+}
