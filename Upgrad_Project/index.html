@@ -1,92 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c1ab1fe471.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Homepage - ScriBBler</title>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/index.css">
+    
 </head>
 <body>
-  <!-- <header id="header">
-    <div class="logo">
-      <h1>ScriBBler</h1>
-    </div>
-    <div class="subheading">
-      <h3>Explore, Imagine, Create</h3>
-    </div>
-    <div class="buttons">
-      <button id="signUpButton">Sign Up</button>
-      <button id="signInButton">Sign In</button>
-    </div>
-  </header> -->
+    <header>
+        <a  class="logo">ScriBBler</a>
+        <span class="avs">
+            <button id="myBtn">Sign Up</button>
+              <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                 <form>
+                  <h1>Get Started</h1>
+                  <hr>
+                  <label for="fname">Full Name:</label><br>
+                  <input class="inp" type="text" id="fname" name="fname" placeholder="Enter Full Name" required><br><br>
 
-  <header>
-    <h1 class="logo">ScriBBler</h1>
-    <h3 class="monoUbuntuFont">Explore, Imagine, Create</h3>
-    <div class="buttons">
-      <button id="signUpButton">Sign Up</button>
-      <button id="signInButton">Sign In</button>
-    </div>
-</header>
+                  <label for="Username">Username:</label><br>
+                  <input type="text" class="inp" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
 
-  <!-- <div class="content">
+                  <label for="password">Password:</label><br>
+                  <input class="inp" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+
+                  <label for="password1">Confirm Password:</label><br>
+                  <input class="inp" type="password" id="password1" name="password1" placeholder="Confirm Password"  required><br><br>
+                  
+                  <input type="submit" class="value" value="Sign Up">
+                 </form> 
+              </div>
+              </div>
+
+              <button id="myBtn1">Sign In</button>
+              <div id="myModal1" class="modal1">
+                <div class="modal-content1">
+                  <span class="close">&times;</span>
+                  <form>
+                    <h1>Welcome Back!</h1>
+                    <hr>
+                    <label for="Username">Username:</label><br>
+                  <input type="text" class="inp" id="Username" name="Username" placeholder="Enter Username"  required><br><br>
   
-    <div class="center-buttons">
-      <button id="allPostsButton">All Posts</button>
-      <button id="createPostButton">Create Post</button>
-    </div>
-  </div> -->
+                    <label for="password">Password:</label><br>
+                    <input class="inp" type="password" id="password" name="password" placeholder="Enter Password"  required><br><br>
+  
+                    <input type="submit" class="value" value="Sign In">
+                    <p style="display: inline;">Not a member ?<button id="myBtn13">Sign Up</button></p>
+                  </form>
+                   
+                </div>
+              </div>
 
+              
+              <div id="myModal2" class="modal2">
+                <div class="modal-content2">
+                  <span class="close">&times;</span>
+                    <form>
+                    <p>Pen Your Post</p>
 
-  <div>
-    <img id="bgImg"  src="images/background.jpg">
-    <div id="btnPos">
-        <button id="allPostsButton" class="btnColor" style="color:black" onClick="goToPage()">All Posts</button>
-        <button id="createPostButton" class="btnColor" style="color:black">Create Post</button>
-    </div>
+                     <label for="title">Title:</label><br>
+                     <input type="text" class="inp" id="Username" name="title"   required><br><br>
+  
+                     <label for="textarea">Content:</label><br>
+                     <textarea id="w3review" class="inp" id="textarea" name="w3review" rows="20" cols="130"></textarea><br>
+                    <input type="submit" class="value2" value="Submit">
+                  </form>
+                </div>
+              </div>
+
+            </span>
+            <p class="middleText">Explore, Imagine, Create</p>
+          </header>
+            <div class="vertical-center">
+              <button class="siu"><a href="html/bloglist.html">All Posts</a></button>
+              &ensp;
+              <button class="siu" id="myBtn2"> Create Posts</button>
+            </div>
     
-</div>
-
-
-  <div id="signUpModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Get Started</h2>
-      <input type="text" placeholder="Enter your name">
-      <input type="text" placeholder="Enter your username">
-      <input type="password" placeholder="Enter your password">
-      <input type="password" placeholder="Re-enter your password">
-      <button id="modalSignUpButton">Sign Up</button>
-    </div>
-  </div>
-
-  <div id="signInModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Welcome Back!</h2>
-      <input type="text" placeholder="Enter your username">
-      <input type="password" placeholder="Enter your password">
-      <button id="modalSignInButton">Sign In</button>
-      <p>Not a member? <a href="#" id="showSignUpModal">Sign Up</a></p>
-    </div>
-  </div>
-
-  <div id="createPostModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Pen Your Post</h2>
-      <label for="postTitle">Title:</label>
-      <input type="text" id="postTitle" placeholder="Enter the title of your post">
-      <label for="postContent">Contents:</label>
-      <textarea id="postContent" placeholder="Enter the contents of your post"></textarea>
-      <button id="modalCreatePostButton">Create</button>
-    </div>
-  </div>
-
-
-  <script src="scripts/index.js"></script>
+    <!-- TODO: Include all your code for the header and home page here -->
 </body>
+<script src="scripts/index.js"></script>
 </html>
-
